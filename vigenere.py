@@ -30,9 +30,3 @@ class VigenereCypher:
                 (letter_pos - key_letter_pos) % self._alphabet_len] if letter != SPACE else letter
 
         return plain_text
-
-
-if __name__ == '__main__':
-    vigenere = VigenereCypher()
-    print(vigenere.encrypt('secret', 'ernesto luis'))
-    print(vigenere.decrypt('secret', 'wvpvwmg nlml'))
